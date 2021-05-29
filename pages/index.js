@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/IndexSections/Header'
 import ServicesSection from '../components/IndexSections/ServicesSection'
 import Catalog from '../components/IndexSections/Catalog'
+import Information from '../components/IndexSections/Information'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Header />
         <ServicesSection />
         <Catalog />
+        <Information />
       </main>
 
     </>

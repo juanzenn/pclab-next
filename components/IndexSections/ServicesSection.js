@@ -2,7 +2,7 @@ import ServiceCard from "./ServiceCard"
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="container mx-auto px-4 space-y-4">
+    <section id="services" className="container mx-auto px-4 space-y-4 mb-12">
       <h2 className="text-4xl font-bold mb-4 mt-8">Nuestros Servicios</h2>
 
       <div className="space-y-6">

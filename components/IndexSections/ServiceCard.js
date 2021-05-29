@@ -3,8 +3,8 @@ export default function ServiceCard(props) {
     <div
       className={
         props.reverse
-          ? `py-4 flex flex-col lg:flex-row-reverse items-center justify-between space-y-2 lg:space-y-0`
-          : `py-4 flex flex-col lg:flex-row items-center justify-between space-y-2 lg:space-y-0`
+          ? `py-4 flex flex-col lg:flex-row-reverse items-center justify-around space-y-2 lg:space-y-0`
+          : `py-4 flex flex-col lg:flex-row items-center justify-around space-y-2 lg:space-y-0`
       }
     >
       <div className="w-screen lg:w-1/2">
