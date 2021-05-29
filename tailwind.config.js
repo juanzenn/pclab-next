@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       zIndex: {
         '-1': '-1'
+      },
+      colors: {
+        'background': '#090909'
       }
     },
   },

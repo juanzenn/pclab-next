@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/IndexSections/Header'
+import ServicesSection from '../components/IndexSections/ServicesSection'
+import Catalog from '../components/IndexSections/Catalog'
 
 export default function Home() {
   return (
@@ -9,8 +11,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-black text-gray-100">
+      <main className="bg-gray-900 text-gray-100">
         <Header />
+        <ServicesSection />
+        <Catalog />
       </main>
 
     </>

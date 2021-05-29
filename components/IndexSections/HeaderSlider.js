@@ -13,7 +13,7 @@ export default function HeaderSlider() {
     if (next > 5) {
       next = 1
     }
-    const id = setTimeout(() => setCurrent(next), 4000)
+    const id = setTimeout(() => setCurrent(next), 3000)
     return () => clearTimeout(id)
   }, [current])
 

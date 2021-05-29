@@ -10,10 +10,10 @@ export default function Header() {
 
       <div className="flex flex-col lg:flex-row gap-6 justify-center z-10">
         <div className="space-y-1 text-center">
-          <h2 className="font-bold text-2xl lg:text-5xl">
+          <h2 className="font-bold text-2xl lg:text-4xl font-mono">
             ¿Quieres armar tu PC?
           </h2>
-          <p className="font-light text-gray-400 text-lg">
+          <p className="font-light text-gray-300 text-lg">
             Prueba nuestro builder de PCs
           </p>
           <div className="space-x-4">
@@ -31,8 +31,8 @@ export default function Header() {
         </div>
 
         <div className="space-y-1 text-center">
-          <h2 className="font-bold text-2xl lg:text-5xl">¿No sabes armarla?</h2>
-          <p className="font-light text-gray-400 text-lg">
+          <h2 className="font-bold text-2xl lg:text-4xl font-mono">¿No sabes armarla?</h2>
+          <p className="font-light text-gray-300 text-lg">
             Echa un vistazo a nuestras PCs recomendadas
           </p>
           <Link href="/#catalogo">
