@@ -8,6 +8,9 @@ module.exports = {
       },
       colors: {
         'background': '#090909'
+      },
+      spacing: {
+        '110': '110%'
       }
     },
   },

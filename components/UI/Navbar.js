@@ -1,6 +1,11 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
-import { InstagramFill, WhatsappFill, TextAlignJustified } from "akar-icons"
+import {
+  InstagramFill,
+  WhatsappFill,
+  TextAlignJustified,
+  Cross,
+} from "akar-icons"
 
 export default function Navbar() {
   // Use only for phone
@@ -37,13 +42,13 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed z-50 py-4 px-4 lg:px-6 w-full h-auto lg:h-12 flex flex-col lg:flex-row lg:justify-around lg:items-center bg-blue-900">
-      <div className="bg-blue-300 w-24 h-6"></div>
+    <nav className="fixed z-50 py-4 lg:px-6 w-full h-auto lg:h-12 flex flex-col lg:flex-row lg:justify-around lg:items-center lg:bg-blue-900 shadow-none lg:shadow-md">
+      <div className="bg-blue-300 w-24 h-6 ml-4 mb-4 lg:ml-0 lg:mb-0"></div>
 
       <ul
         className={
           isVisible
-            ? "p-4 flex flex-col lg:flex-row lg:items-center gap-4"
+            ? "w-screen lg:w-auto pl-2 py-4 lg:p-0 flex flex-col lg:flex-row lg:items-center gap-4 bg-blue-900" 
             : "hidden"
         }
       >
@@ -51,7 +56,7 @@ export default function Navbar() {
           <li key={item.title}>
             <Link href={item.ref}>
               <a
-                className="text-gray-100 hover:bg-blue-300 hover:text-gray-800 p-2 transition-all"
+                className="text-gray-100 hover:bg-blue-300 p-2 hover:text-gray-800 transition-all"
                 onClick={isMobile ? handleClick : undefined}
               >
                 {item.title}
@@ -61,27 +66,37 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <div className={isVisible ? "flex gap-4" : "hidden"}>
+      <div
+        className={
+          isVisible
+            ? "w-screen lg:w-auto pl-2 lg:p-0 flex gap-4 bg-blue-900"
+            : "hidden"
+        }
+      >
         <a
           href="https://www.instagram.com"
-          className="text-gray-100 hover:text-blue-300 transition-all"
+          className="text-gray-100 hover:text-blue-300 p-2 lg:p-0 transition-all"
         >
           <WhatsappFill />
         </a>
 
         <a
           href="https://www.web.whatsapp.com"
-          className="text-gray-100 hover:text-blue-300 transition-all"
+          className="text-gray-100 hover:text-blue-300 p-2 lg:p-0 transition-all"
         >
           <InstagramFill />
         </a>
       </div>
 
       <button
-        className="w-max absolute top-4 right-4 lg:hidden"
+        className="w-max absolute top-4 right-4 focus:outline-none lg:hidden"
         onClick={handleClick}
       >
-        <TextAlignJustified color="white" />
+        {isVisible ? (
+          <Cross color="white" />
+        ) : (
+          <TextAlignJustified color="white" />
+        )}
       </button>
     </nav>
   )

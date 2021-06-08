@@ -1,6 +1,6 @@
 export default function Information() {
   return (
-    <section className="py-6 px-4 container mx-auto flex flex-col lg:flex-row justify-around">
+    <section id="information" className="py-6 px-4 container mx-auto flex flex-col lg:flex-row justify-around">
       <div className="max-w-lg space-y-4">
         <div>
           <h2 className="p-2 font-mono font-bold text-2xl lg:text-4xl bg-blue-600 max-w-max">¿A que nos dedicamos?</h2>

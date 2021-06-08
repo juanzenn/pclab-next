@@ -22,7 +22,7 @@ export default function Header() {
                 Builder
               </button>
             </Link>
-            <Link href="/#index_info">
+            <Link href="/#information">
               <button className="px-4 py-2 font-ligt tracking-wide text-lg text-gray-100 border border-purple-600 bg-purple-700 hover:bg-purple-600 transition-colors">
                 Tutorial
               </button>
